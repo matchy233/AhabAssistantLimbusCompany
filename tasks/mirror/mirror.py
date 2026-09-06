@@ -347,7 +347,7 @@ class Mirror:
                     not cfg.fight_to_last_man
                     and not self.defense_for_solo
                     and not (
-                        auto.find_element("teams/12_sinner_live_assets.png")
+                        auto.find_element("teams/12_sinner_live_assets.png",threshold=0.75)
                         or auto.find_element("teams/11_sinner_live_assets.png")
                         or auto.find_element("teams/10_sinner_live_assets.png")
                     )
